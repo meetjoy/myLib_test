@@ -1,5 +1,5 @@
 --How to install node on Linux (WSL)?
-Install Ubuntu20.04LTS one Windows.
+Install Ubuntu20.04LTS on Windows.
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - 
 sudo apt-get install -y nodejs
@@ -18,7 +18,7 @@ $ express --view=pug
 
 sudo npm install -g nodemon
 2.0.4
-npm install --savnpm e-dev nodemon
+npm install --save-dev nodemon
 
 under project folder $ npm install mongoose
 
