@@ -21,6 +21,7 @@ sudo npm install -g nodemon
 npm install --save-dev nodemon
 
 under project folder $ npm install mongoose
+MongoDB Community Server 4.2.7 2007R2Plus SSL
 
 
 
