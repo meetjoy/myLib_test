@@ -22,6 +22,6 @@ npm install --save-dev nodemon
 
 under project folder $ npm install mongoose
 MongoDB Community Server 4.2.7 2007R2Plus SSL
-
+Mongo Compass Community Edition Stable 1.21.2
 
 
