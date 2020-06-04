@@ -1,6 +1,16 @@
 const Genre = require('../models/genre');
 
-exports.genre_list = (req, res) => { res.send('未实现：genre 作者列表'); };
+exports.genre_list = function(req, res, next) {
+    Genre.find()
+      .populate('genre')
+      .sort([['name', 'ascending']])
+      .exec(function (err, list_genres) {
+        if (err) { return next(err); }
+        //Successful, so render
+        res.render('genre_list', { title: 'genre list', genre_list: list_genres });
+      });
+  
+  };
 
 exports.genre_detail = (req, res) => { res.send ('Not implemented: genre detail' + req.params.id); } ;
 
